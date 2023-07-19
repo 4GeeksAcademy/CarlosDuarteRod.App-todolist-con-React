@@ -8,7 +8,7 @@ import React, {useState} from "react";
 const Home = () => {
 
 	const [frase, setFrase] = useState("");
-	const [tarea, setTarea] = useState(["Tarea1", "Tarea2", "Tarea3", "Tarea4"]);
+	const [tarea, setTarea] = useState([]);
 
 	
 	const handleSubmit = (e) => {
@@ -27,11 +27,11 @@ const Home = () => {
 	}
 
 	return(
-		<div>
+		<div className="container">
 		<form onSubmit={handleSubmit}>
 			<input type="text" value={frase} onChange={e => setFrase(e.target.value)}/>
 		</form>
-		<ul> {tarea.map((item) => <li onClick={ () => handleCancel(item)}>  {item}  </li>)}
+		<ul> {tarea.map((item) => <li>  {item} <button onClick={ () => handleCancel(item)} type="button" class="btn-close" aria-label="Close"></button> </li> )} 
 		{/* {tarea.map((item) => {return (<li> {item} </li>)})} */}
 		</ul>
 		</div>
