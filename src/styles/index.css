@@ -7,6 +7,9 @@
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
+  h1{
+    text-align: center;
+  }
   
   /* Estilos para el formulario */
   form {
@@ -48,14 +51,7 @@
   }
   
   /* Estilos para el botón de eliminar tarea */
-  .delete-btn {
-    background-color: #dc3545;
-    color: #fff;
-    border: none;
-    padding: 4px 8px;
-    border-radius: 4px;
-    cursor: pointer;
-  }
+
   footer {
     color: #888; /* Color gris */
     font-size: 0.9rem; /* Tamaño de letra más pequeño */

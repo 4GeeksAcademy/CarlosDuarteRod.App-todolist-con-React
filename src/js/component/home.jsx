@@ -28,6 +28,7 @@ const Home = () => {
 
 	return(
 		<div className="container">
+			<h1>Lista de tareas</h1>
 		<form onSubmit={handleSubmit}>
 			<input type="text" value={frase} onChange={e => setFrase(e.target.value)}/>
 		</form>
