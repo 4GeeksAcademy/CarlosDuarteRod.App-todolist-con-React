@@ -56,7 +56,11 @@
     border-radius: 4px;
     cursor: pointer;
   }
-  
+  footer {
+    color: #888; /* Color gris */
+    font-size: 0.9rem; /* Tamaño de letra más pequeño */
+    font-weight: 300; /* Grosor de letra más fino */
+  }
 /* 
 
     You can write your own styles here...
