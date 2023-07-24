@@ -29,7 +29,6 @@
     color: #fff;
     border: none;
     border-radius: 0 4px 4px 0;
-    cursor: pointer;
   }
   
   /* Estilos para la lista de tareas */
@@ -53,10 +52,19 @@
   /* Estilos para el botón de eliminar tarea */
 
   footer {
-    color: #888; /* Color gris */
-    font-size: 0.9rem; /* Tamaño de letra más pequeño */
-    font-weight: 300; /* Grosor de letra más fino */
+    color: #888; 
+    font-size: 0.9rem; 
+    font-weight: 300; 
   }
+
+  .hidden-icon > span {
+    visibility: hidden;
+}
+/* Muestra el icono cuando el cursor pase por encima del li */
+.hidden-icon:hover > span {
+    visibility: visible;
+    color: red;
+}
 /* 
 
     You can write your own styles here...

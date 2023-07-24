@@ -32,7 +32,7 @@ const Home = () => {
 		<form onSubmit={handleSubmit}>
 			<input type="text" value={frase} onChange={e => setFrase(e.target.value)}/>
 		</form>
-		<ul> {tarea.map((item) => <li>  {item} <button onClick={ () => handleCancel(item)} type="button" class="btn-close" aria-label="Close" ></button> </li> )} 
+		<ul> {tarea.map((item) => <li className="hidden-icon hidden-icon:hover">  {item} <span onClick={ () => handleCancel(item)} type="button" class="btn-close" aria-label="Close" ></span> </li> )}
 		{/* {tarea.map((item) => {return (<li> {item} </li>)})} */}
 		</ul>
 		<footer>
